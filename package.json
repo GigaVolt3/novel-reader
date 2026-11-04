@@ -1,0 +1,15 @@
+{
+  "name": "novel-reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Link-in, translated-out Chinese novel reader powered by AI",
+  "main": "server/index.mjs",
+  "scripts": {
+    "start": "node server/index.mjs",
+    "dev": "node --watch server/index.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

@@ -1,0 +1,76 @@
+# ==============================================================================
+# Environment & Secrets (NEVER COMMIT KEYS)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+.secrets*
+*.pem
+*.key
+*.cert
+
+# ==============================================================================
+# Runtime Data, Novel Storage & Cache
+# ==============================================================================
+# User novel content, downloaded chapters & cover art
+novels/
+# Cached translations, HTML source snapshots, embeddings, and recommendations
+cache/
+# Local user runtime configuration and history
+config.json
+.history.json
+# Temporary and intermediate swap files
+*.tmp
+*.tmp.*
+
+# ==============================================================================
+# Logs & Process Output
+# ==============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+server.log
+server.err
+
+# ==============================================================================
+# Dependencies
+# ==============================================================================
+node_modules/
+.pnpm-store/
+
+# ==============================================================================
+# Testing, MCP & Automation Artifacts
+# ==============================================================================
+.playwright-mcp/
+playwright-report/
+test-results/
+.system_generated/
+scratch/
+
+# ==============================================================================
+# Operating System & Editor / IDE Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
